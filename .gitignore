@@ -1,0 +1,213 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ============================
+# Виртуальное окружение
+# ============================
+venv/
+env/
+.venv/
+.env/
+virtualenv/
+pyenv/
+.venv.bak/
+ENV/
+env.bak/
+
+# ============================
+# Django
+# ============================
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+/mediafiles/
+/uploaded/
+*.mo
+
+# ============================
+# Базы данных (все!)
+# ============================
+*.db
+*.sqlite
+*.sqlite3
+*.psql
+*.dump
+*.backup
+/postgres_data/
+
+# ============================
+# Секреты и конфиги
+# ============================
+.env
+.env.local
+.env.prod
+.env.dev
+.env.staging
+*.env
+!.env.example
+secrets.json
+config.json
+*.key
+*.pem
+*.crt
+*.p12
+.aws/
+.credentials/
+private/
+
+# ============================
+# Docker
+# ============================
+*.pid
+docker-compose.override.yml
+docker-compose.prod.yml
+docker/data/
+docker/postgres/data/
+docker/redis/data/
+docker/mysql/data/
+*.tar.gz
+*.tar
+Dockerfile.dev
+
+# ============================
+# IDE и редакторы
+# ============================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+out/
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+.sublime/
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+
+# Emacs
+*~
+
+# ============================
+# Логи и временные файлы
+# ============================
+logs/
+*.log
+*.tmp
+*.temp
+*.cache
+*.prof
+*.clog
+*.pid
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================
+# Файлы пользователей
+# ============================
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.odt
+/downloads/
+/uploads/
+/tmp/
+
+# ============================
+# Git
+# ============================
+*.orig
+*.rej
+*.patch
+*.diff
+.gitattributes
+.gitmodules
+
+# ============================
+# Системные файлы
+# ============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.bak
+*.swp
+*~
+*.tmp
+*.temp
+
+# ============================
+# Файлы конфигурации с секретами
+# ============================
+*.local
+*.secret
+*.private
+config.local.*
+settings.local.*
+
+# ============================
+# Прочее
+# ============================
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+node_modules/
+bower_components/
+.coverage
+.nyc_output/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
