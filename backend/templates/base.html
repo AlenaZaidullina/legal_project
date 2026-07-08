@@ -1,22 +1,59 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
     <title>Юридический сайт</title>
 </head>
 <body>
     
     <!-- ШАПКА -->
-    <header>
-        <h1>ЮристПро</h1>
-        <nav>
-            <a href="/">Главная</a>
-            <a href="#">Документы</a>
-            <a href="#">Клиенты</a>
-            <a href="#">Контакты</a>
-        </nav>
-        <hr>
+    <header class="header" id="header">
+
+        <div class="header_inner">
+            <!-- Основной контейнер шапки -->
+            <div class="header_container">
+                <!--Левая часть  LOGOTIP-->
+                <div class="header_logo">
+
+                </div>
+
+                <!--Навигация-->
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="/about" class="header__nav-link">
+                                Обо мне
+                            </a>
+                        </li>
+
+                        <li class="header__nav-item">
+                            <a href="/about" class="header__nav-link">
+                                Услуги
+                            </a>
+                        </li>
+
+                        <li class="header__nav-item">
+                            <a href="/about" class="header__nav-link">
+                                Информация
+                            </a>
+                        </li>
+
+                        <li class="header__nav-item">
+                            <a href="/about" class="header__nav-link">
+                                Прайс
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+
+            </div>
+        </div>
+        
     </header>
     
   
@@ -26,7 +63,7 @@
     <!-- ПОДВАЛ -->
     <footer>
         <hr>
-        <p>&copy; 2026 Ю</p>
+        <p>this is footer</p>
     </footer>
     
 </body>
