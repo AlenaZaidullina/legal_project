@@ -17,11 +17,11 @@
             <div class="header_container">
                 <!--Левая часть  LOGOTIP-->
                 <div class="header_logo">
-
+                    <h1>Логотип</h1>
                 </div>
 
                 <!--Навигация-->
-                <nav class="header__nav">
+                <nav class="header__nav" id="mainNav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
                             <a href="/about" class="header__nav-link">
@@ -46,25 +46,80 @@
                                 Прайс
                             </a>
                         </li>
+
+                        <li class="header__nav-item">
+                            <a class="header__btn header__nav-link" href="#contacts"> 
+                                Связаться
+                            </a>
+                        </li>
                     </ul>
 
                 </nav>
 
-
+                <button class="header__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
             </div>
+        </div>
+
+        <!-- Выезжающее меню -->
+        <div class="headre__mobile-menu" id="mobileMenu">
+            <nav class="header__mobile-nav">
+                <ul class="header__mobile-list">
+                    <li class="header__mobile-item">
+                        <a href="/about" class="header__mobile-link">Обо мне</a>
+                    </li>
+
+                    <li class="header__mobile-item">
+                        <a href="/about" class="header__mobile-link">Услуги</a>
+                    </li>
+
+                    <li class="header__mobile-item">
+                        <a href="/about" class="header__mobile-link">Информация</a>
+                    </li>
+
+                    <li class="header__mobile-item">
+                        <a href="/about" class="header__mobile-link">Прайс</a>
+                    </li>
+
+                    <li class="header__mobile-item">
+                        <a class="btn" href="/contact">Связаться</a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
         
     </header>
     
-  
+   <main class="main-content">
     {% block content %}
+
     {% endblock %}
-    
+    </main>
+
+
     <!-- ПОДВАЛ -->
-    <footer>
-        <hr>
-        <p>this is footer</p>
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+
+            <!-- Первая колонка -->
+             <div class="footer__column">
+
+             </div>
+
+             <!-- Вторая колонка -->
+            <div class="footer__column">
+
+            </div>
+
+
+        </div>
     </footer>
+
+   
     
 </body>
 </html>

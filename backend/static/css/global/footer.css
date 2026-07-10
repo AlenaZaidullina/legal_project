@@ -1,0 +1,6 @@
+.footer {
+    flex-shrink: 0;
+    background-color: var(--footer-bg);
+    padding: 250px 0 0;
+    position: relative;
+}

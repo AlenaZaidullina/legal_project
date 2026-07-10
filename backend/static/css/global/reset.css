@@ -10,10 +10,20 @@
 /* Базовые настройки html */
 html {
     font-size: 16px; /* Базовый размер шрифта */
+    height: 100%;
 }
 
-/* Настройки body и html */
-body, html {
-    width: 100%; /* Полная ширина окна */
-    overflow-x: hidden; /* Запрет горизонтального скролла */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
+
+.main-content {
+    flex: 1 0 auto;
+}
+
