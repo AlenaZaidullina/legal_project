@@ -5,3 +5,8 @@
     font-display: swap;
 
 }
+
+@font-face {
+    font-family: "Jun";
+    src: url('/static/fonts/Jun/Jun_Regular.otf');
+}

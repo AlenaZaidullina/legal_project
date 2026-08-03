@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: center;
     z-index: 0;
+    min-height: 50vh;                /*  1/2 экрана на телефоне */
+    overflow: hidden;                /* Чтобы изображение не вылезало */
 }
 
 .hero::after {
@@ -24,12 +26,109 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /*на этом держится правильная форма изображения на всех устройствах. пока не менять*/
+    height: 100%; 
+    object-fit: cover;
+    object-position: 70% center ; 
+    z-index: 0;
 }
 
 .hero__container {
-    position: relative;
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;    
+    position: absolute;
     z-index: 2; 
+    padding: 150px 0px 25px 0px;
+    bottom: 0;
+
+}
+
+.hero__content {
+    font-family: 'Jun';
+    font-size: 8vw;
+    line-height: 50px;
+}
+
+.hero__text {   
+    padding: 0 0 0 20px;
+}
+
+.hero__text2 {
+    padding: 0 0 0 94px;
+}
+
+
+@media (min-width: 576px) {
+
+    .hero__container {
+        padding: 150px 0 40px 0;
+    }
+
+    .hero__content {
+        line-height: 60px;
+    }
+
+    .hero__text2 {
+        padding: 0 0 0 130px;
+    }
+
+}
+
+
+@media (min-width: 769px) {
+
+    .hero__image {
+            object-position: center 10%; 
+        }
+
+    .hero__content {
+        line-height: 70px;
+    }
+
+    .hero__text2 {
+        padding: 0 0 0 150px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .hero__image {
+        object-position: center 10%; 
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .hero__image {
+        object-fit: cover;         
+        object-position: 50% 15%;     
+    }
+
+    .hero__content {
+        line-height: 80px;
+        font-size: 7.5vw;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .hero__image {
+        object-position: 50% 30%;
+
+    }
+
+    .hero__content {
+        line-height: 130px;
+        font-size: 6vw;
+    }
+
+    .hero__text2 {
+        padding: 0 0 0 250px;
+    }
+
+
 }
 
 
