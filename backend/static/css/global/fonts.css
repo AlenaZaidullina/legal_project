@@ -10,3 +10,10 @@
     font-family: "Jun";
     src: url('/static/fonts/Jun/Jun_Regular.otf');
 }
+
+
+@font-face {
+    font-family: 'Denistina';
+    src: url('/static/fonts/denistina/denistina_en.ttf');
+
+}
